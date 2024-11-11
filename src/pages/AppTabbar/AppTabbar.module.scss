@@ -1,0 +1,11 @@
+.AppTabbar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  transition: bottom .3s;
+
+  &_hidden {
+    bottom: calc(-1 * var(--tabbar-height));
+  }
+}

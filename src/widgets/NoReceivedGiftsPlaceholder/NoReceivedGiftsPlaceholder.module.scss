@@ -1,0 +1,13 @@
+.NoReceivedGiftsPlaceholder {
+  --Placeholder__sunheading_color: var(--color-primary);
+
+  background-color: var(--background-secondary);
+  border-radius: 12px;
+  padding: 32px 16px;
+
+  &__lottie {
+
+    width: 100px;
+    height: 100px;
+  }
+}

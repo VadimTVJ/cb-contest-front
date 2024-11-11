@@ -1,0 +1,98 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "standard"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint",
+        "simple-import-sort"
+    ],
+    "rules": {
+        // Common
+        "semi": ["error", "always"],
+        "indent": ["error", 2, { "SwitchCase": 1 }],
+        "no-unused-vars": 0, // ts ругается на enum
+        "@typescript-eslint/no-unused-vars": "error",
+        "prefer-promise-reject-errors": 0,
+        "react/prop-types": 0,
+
+        // Imports & Exports
+        "simple-import-sort/imports": "error",
+        "simple-import-sort/exports": "error",
+
+        // Prevent missing parentheses around multilines JSX
+        // https://github.com/yannickcr/eslint-plugin-react/blob/843d71a432baf0f01f598d7cf1eea75ad6896e4b/docs/rules/jsx-wrap-multilines.md
+        "react/jsx-wrap-multilines": ["error", {
+          "declaration": "parens-new-line",
+          "assignment": "parens-new-line",
+          "return": "parens-new-line",
+          "arrow": "parens-new-line",
+          "condition": "parens-new-line",
+          "logical": "parens-new-line",
+          "prop": "parens-new-line"
+        }],
+
+        // Require that the first prop in a JSX element be on a new line when the element is multiline
+        // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-first-prop-new-line.md
+        "react/jsx-first-prop-new-line": ["error", "multiline-multiprop"],
+
+        // Prevent extra closing tags for components without children
+        // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/self-closing-comp.md
+        "react/self-closing-comp": "error",
+
+        // One JSX Element Per Line
+        // https://github.com/yannickcr/eslint-plugin-react/blob/843d71a432baf0f01f598d7cf1eea75ad6896e4b/docs/rules/jsx-one-expression-per-line.md
+        "react/jsx-one-expression-per-line": ["error", { "allow": "single-child" }],
+
+        // Validate closing tag location in JSX
+        // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-closing-tag-location.md
+        "react/jsx-closing-tag-location": "error",
+
+        // Limit maximum of props on a single line in JSX
+        // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-max-props-per-line.md
+        "react/jsx-max-props-per-line": ["error", { "maximum": 1, "when": "multiline" }],
+
+        // Enforce JSX indentation
+        // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-indent.md
+        "react/jsx-indent": ["error", 2],
+
+        // Validate closing bracket location in JSX
+        // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-closing-bracket-location.md
+        "react/jsx-closing-bracket-location": ["error", "line-aligned"],
+
+        // в 18 реакте нет необходимости импортить React в .tsx/.jsx файлах
+        "react/react-in-jsx-scope": 0,
+        "react/display-name": 0,
+
+        // Validate whitespace in and around the JSX opening and closing brackets
+        // https://github.com/yannickcr/eslint-plugin-react/blob/843d71a432baf0f01f598d7cf1eea75ad6896e4b/docs/rules/jsx-tag-spacing.md
+        "react/jsx-tag-spacing": ["error", {
+          "closingSlash": "never",
+          "beforeSelfClosing": "always",
+          "afterOpening": "never",
+          "beforeClosing": "never"
+        }],
+
+        // no-undef от eslint конфликтует с ts (global types). TS2304 вполне справляется с задачей
+        // https://typescript-eslint.io/linting/troubleshooting/#i-get-errors-from-the-no-undef-rule-about-global-variables-not-being-defined-even-though-there-are-no-typescript-errors
+        "no-undef": 0
+    }
+}

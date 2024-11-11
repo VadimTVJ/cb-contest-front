@@ -1,0 +1,15 @@
+.PageGiftPurchased {
+  height: calc(100vh);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__lottie {
+    width: 100px;
+    height: 100px;
+  }
+
+  &__placeholder {
+    --Placeholder__sunheading_color: var(--color-primary);
+  }
+}

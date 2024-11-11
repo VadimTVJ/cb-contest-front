@@ -1,0 +1,53 @@
+.App {
+  font-family: -apple-system,BlinkMacSystemFont,system-ui,"Helvetica Neue",Roboto,sans-serif;
+
+  // common tokens
+  --accent-blue: rgba(0, 122, 255, 1);
+  --accent-cyan: rgba(90, 200, 250, 1);
+  --accent-gold: rgba(241, 170, 5, 1);
+  --accent-purple: rgba(175, 81, 222, 1);
+  --accent-green: rgba(53, 199, 89, 1);
+  --accent-black: rgba(0, 0, 0, 1);
+  --accent-white: rgba(255, 255, 255, 1);
+  --accent-primary-secondary: rgba(0, 122, 255, 0.12);
+  --accent-primary: var(--accent-blue);
+  --label-secondary: rgba(142, 142, 147, 1);
+  --label-date: rgba(109, 109, 113, 1);
+
+  // ui
+  --tabbar-height: calc(58px + env(safe-area-inset-bottom));
+
+  &_scheme {
+
+    &_light {
+      --background-body: var(--accent-white);
+      --background-modal: var(--background-secondary);
+      --background-table: var(--accent-white);
+      --color-primary: var(--accent-black);
+      --tabbar: rgba(241, 241, 242, 0.75);
+      --tabbar-icon: rgba(149, 149, 149, 1);
+      --tabbar-label: rgba(84, 84, 88, 0.65);
+      --separator: rgba(185, 185, 187, 0.35);
+      --background-secondary: rgba(239, 239, 243, 1);
+      --background-notification: rgba(45, 45, 45, 0.8);
+    }
+
+    &_dark {
+      --background-body: rgba(28, 28, 30, 1);
+      --color-primary: var(--accent-white);
+      --background-modal: rgba(28, 28, 30, 1);
+      --background-table: rgba(44, 44, 46, 1);
+      --tabbar: rgba(30, 30, 30, 0.75);
+      --tabbar-label: #797979;
+      --tabbar-icon: #797979;
+      --separator: rgba(60, 60, 67, 0.36);
+      --background-secondary: rgba(44, 44, 46, 1);
+      --background-notification: rgba(0, 0, 0, 0.8);
+    }
+  }
+
+  a {
+    color: var(--accent-primary);
+    text-decoration: none;
+  }
+}

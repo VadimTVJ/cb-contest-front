@@ -1,0 +1,39 @@
+.TabbarItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: none;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+
+  &_selected {
+    color: var(--accent-primary);
+
+    path {
+      fill: var(--accent-primary);
+    }
+  }
+
+  &:not(&_selected) {
+    color: var(--tabbar-label);
+
+    path {
+      fill: var(--tabbar-icon);
+    }
+  }
+
+  &__lottie {
+    width: 26px;
+    height: 26px;
+    margin-bottom: 4px;
+  }
+
+  &__label {
+    // todo typography
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: .1px;
+  }
+}

@@ -1,0 +1,1 @@
+export { StoreTabLayout } from './StoreTabLayout';

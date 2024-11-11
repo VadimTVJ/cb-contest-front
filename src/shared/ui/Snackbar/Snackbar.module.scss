@@ -1,0 +1,32 @@
+.Snackbar {
+  background-color: var(--background-notification);
+  color: var(--accent-white);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 14px;
+  padding: 9px 16px 9px 13px;
+  display: flex;
+  align-items: center;
+
+  &__before {
+    margin-right: 13px;
+  }
+
+  &__content {
+    flex-grow: 1;
+    // todo typography
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -.15px;
+  }
+
+  &__heading {
+    font-weight: 600;
+  }
+
+  &__subheading {}
+
+  &__after {
+    margin-left: 13px;
+  }
+}

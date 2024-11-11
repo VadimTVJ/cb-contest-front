@@ -1,0 +1,41 @@
+.ProfileGiftCard {
+  background-color: var(--background-secondary);
+  border-radius: 12px;
+  padding: 8px 12px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+    width: 100%;
+  }
+
+  &__avatar {
+    background-color: var(--background-body);
+  }
+
+  &__index {
+    color: var(--label-secondary);
+    // todo typography
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: -.08px;
+  } // todo rename
+
+  &__preview {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+  }
+
+  &__name {
+    font-weight: 600;
+    // todo typography
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -.44px;
+  }
+}

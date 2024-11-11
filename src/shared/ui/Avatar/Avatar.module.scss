@@ -1,0 +1,12 @@
+.Avatar {
+  display: block;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.AvatarFallback {
+  background-color: var(--background-secondary);
+  color: var(--accent-primary);
+  text-align: center;
+  font-weight: 600;
+}

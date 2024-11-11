@@ -1,0 +1,13 @@
+.NoGiftsPlaceholder {
+  --Placeholder__sunheading_color: var(--color-primary);
+
+  background-color: var(--background-secondary);
+  padding: 32px 16px;
+  border-radius: 12px;
+
+
+  &__lottie {
+    width: 100px;
+    height: 100px;
+  }
+}

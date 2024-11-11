@@ -1,0 +1,29 @@
+.ProfileCell {
+
+  &__username {
+    color: var(--color-primary);
+  }
+
+  &__giftsCount {
+    color: var(--accent-primary);
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-right: 6px;
+    }
+  }
+
+  &__position {
+    color: var(--label-secondary);
+    // todo typography
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 600;
+  }
+
+  &__medal {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}

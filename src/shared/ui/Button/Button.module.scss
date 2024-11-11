@@ -1,0 +1,47 @@
+.Button {
+  font-family: var(--font);
+  display: inline-flex;
+  align-items: center;
+  border: unset;
+  transition: .3s;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+
+  &:not(&_disabled) {
+    background-color: var(--accent-primary);
+    color: var(--accent-white);
+    cursor: pointer;
+
+    &:active {
+      background-color: var(--accent-cyan);
+    }
+  }
+
+  &_disabled {
+    color: var(--label-secondary);
+    background-color: rgba(142, 142, 147, 0.1);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    cursor: not-allowed;
+  }
+
+  &_size {
+
+    &_small {
+      border-radius: 100px;
+      height: 30px;
+      padding: 0 16px;
+
+      // todo typography
+      font-size: 13px;
+      line-height: 18px;
+      letter-spacing: -.08px;
+      font-weight: 600;
+    }
+  }
+
+  &__before {
+    line-height: 0;
+    margin-right: 4px;
+  }
+}

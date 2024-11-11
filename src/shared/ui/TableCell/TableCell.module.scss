@@ -1,0 +1,18 @@
+.TableCellLabel, .TableCellValue {
+  padding: 10px 16px;
+  // todo typography
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: -.44px;
+
+  &:not(:nth-last-child(-n+2)) {
+    border-bottom: 1px solid var(--separator);
+  }
+}
+
+.TableCellLabel {
+  color: var(--label-secondary);
+  border-right: 1px solid var(--separator);
+}
+
+.TableCellValue {}

@@ -1,0 +1,19 @@
+import { clsx } from 'clsx';
+import { type ComponentProps, ReactNode } from 'react';
+
+import styles from './{{properCase componentName}}.module.scss';
+
+export interface {{properCase componentName}}Props extends ComponentProps<'div'> {}
+
+export const {{properCase componentName}} = (props: {{properCase componentName}}Props): ReactNode => {
+  const {
+    className,
+    ...rest
+  } = props;
+
+  return (
+    <div className={clsx(styles.{{properCase componentName}}, className)} {...rest} />
+  );
+};
+
+{{properCase componentName}}.displayName = '{{properCase componentName}}';

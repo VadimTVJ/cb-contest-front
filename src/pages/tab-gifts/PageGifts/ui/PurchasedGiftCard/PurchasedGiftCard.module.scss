@@ -1,0 +1,30 @@
+.PurchasedGiftCard {
+  background-color: var(--background-secondary);
+  border-radius: 12px;
+  padding: 8px 16px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__name {
+    color: var(--label-secondary);
+    margin-bottom: 4px;
+    // todo typography
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: -.08px;
+  }
+
+  &__preview {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 8px;
+  }
+
+  &__action {}
+}
+
+.PurchasedGiftCardSkeleton {
+  width: 100%;
+  aspect-ratio: 117/160;
+}

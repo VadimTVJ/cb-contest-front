@@ -1,0 +1,92 @@
+.StoreGiftPreviewCard {
+  padding: 16px 16px 12px;
+
+  &__preview {
+    background:
+      url('../../../../../shared/assets/pattern-light.png') center center,
+      linear-gradient(180deg, var(--StoreGiftPreviewCard__preview_gradientFrom) 0%, var(--StoreGiftPreviewCard__preview_gradientTo) 100%);
+    background-size: cover;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1;
+    margin-bottom: 12px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__wave {
+    position: absolute;
+    width: 300px;
+    height: 200%;
+    top: -25%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255 255 255 / 70%), rgba(255, 255, 255, 0));
+  }
+
+  &__lottie {
+    width: 268px;
+    height: 268px;
+    z-index: 2;
+    position: relative;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  &__name {
+    margin: 0;
+    // todo typography
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+  }
+
+  &__availableAmount {
+    background-color: var(--accent-primary-secondary);
+    color: var(--accent-primary);
+    padding: 0 8px;
+    border-radius: 100px;
+    margin-left: 12px;
+
+    // todo typography
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -.1px;
+    font-weight: 500;
+  }
+
+  &__tint {
+    color: var(--label-secondary);
+    margin-bottom: 8px;
+    // todo typography
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: -.43px;
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+    // todo typography
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: -.44px;
+    font-weight: 500;
+
+    &Icon {
+      color: var(--accent-white);
+      margin-right: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      height: 20px;
+      border-radius: 100%;
+      line-height: 0;
+    }
+  }
+}

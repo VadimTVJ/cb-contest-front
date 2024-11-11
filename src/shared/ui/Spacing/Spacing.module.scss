@@ -1,0 +1,13 @@
+.Spacing {
+
+  &_mode {
+
+    &_primary {
+      background-color: transparent;
+    }
+
+    &_secondary {
+      background-color: var(--background-secondary);
+    }
+  }
+}

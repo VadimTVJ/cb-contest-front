@@ -1,0 +1,16 @@
+.FeedCell {
+
+  &__lottie {
+
+  }
+
+  &__before {
+    background-color: var(--background-secondary);
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

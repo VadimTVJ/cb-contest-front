@@ -1,0 +1,34 @@
+.Switch {
+  background-color: var(--background-secondary);
+  border-radius: 99px;
+  display: inline-flex;
+  padding: 2px;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: relative;
+
+  &__mask {
+    position: absolute;
+    width: 38px;
+    left: 2px;
+    top: 2px;
+    height: 28px;
+    background-color: var(--background-body);
+    border-radius: 99px;
+    pointer-events: none;
+
+    .Switch_checked & {
+      left: 40px !important;
+    }
+  }
+
+  &__item {
+    width: 38px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+  }
+}

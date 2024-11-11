@@ -1,0 +1,11 @@
+.Badge {
+  position: relative;
+  display: inline-flex;
+
+  &__corner {
+    position: absolute;
+    line-height: 0;
+    margin: auto;
+    width: fit-content;
+  }
+}

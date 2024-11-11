@@ -1,0 +1,6 @@
+.Grid {
+  row-gap: var(--Grid_gapY);
+  column-gap: var(--Grid_gapX);
+  grid-template-columns: repeat(var(--Grid_cols), minmax(0, 1fr));
+  grid-template-rows: repeat(var(--Grid_rows), minmax(0, 1fr));
+}

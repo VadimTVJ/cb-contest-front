@@ -1,0 +1,13 @@
+import {
+  Panel, PanelProps
+} from '@vkontakte/vkui';
+
+import styles from './{{properCase panelName}}.module.scss';
+
+export const {{properCase panelName}} = ({ nav }: PanelProps) => {
+  const rootClassName = styles.{{properCase panelName}};
+
+  return (
+    <Panel nav={nav!} className={rootClassName} />
+  );
+};

@@ -1,0 +1,47 @@
+.ProfileCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__avatar {
+    margin-bottom: 12px;
+  }
+
+  &__name {
+    display: flex;
+    align-items: center;
+    // todo typography
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -.43px;
+    font-weight: 600;
+  }
+
+  &__premIcon {
+    margin-left: 6px;
+  }
+
+  &__counter {
+    color: var(--label-secondary);
+    // todo typography
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: -.44px;
+  }
+
+  &__position {
+    padding: 0 8px;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    border: 2px solid var(--background-body);
+    background-color: var(--label-secondary);
+    color: var(--accent-white);
+    border-radius: 100px;
+
+    // todo typography
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: .1px;
+    font-weight: 500;
+  }
+}

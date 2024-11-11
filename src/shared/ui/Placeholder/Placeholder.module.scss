@@ -1,0 +1,32 @@
+.Placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  &__icon {
+    margin-bottom: 16px;
+    display: flex;
+  }
+
+  &__heading {
+    // todo typography
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -.43px;
+  }
+
+  &__subheading {
+    color: var(--Placeholder__sunheading_color, var(--label-secondary));
+    // todo typography
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: -.43px;
+    margin-top: 8px;
+  }
+
+  &__actions {
+    margin-top: 16px;
+  }
+}
